@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+body{
+	margin: 0px;
+	font-family: 'Montserrat';
+	font-size: 16px;
+	height: 100vh;
+	background-color: #eeeeee;
+
+}
+
+.container{
+text-align: center;
+margin: 0px auto;
+}
+
+.container .logo{
+	width: 120px;
+}
+
+.container p{
+	line-height: 1.7rem;
+}
+
+.container h1{
+	margin: 1em 0;
+}
+
+
+.container .left{
+	background: linear-gradient(#601df7 0%, #8800ff 100%);
+	padding: 1em;
+}
+
+.left p, h1{
+	color: white;
+}
+
+.right p{
+	margin: 2em 0;
+}
+
+.container .attention{
+	width: 100%;
+	margin: .5em auto 0;
+	text-align: center;
+}
+
+.light {
+        color: rgba(255,255,255,.7) !important;
+        margin-top: 2em;
+    }
+
+input, button {
+    width: calc(100% - 3em);
+    padding: .5em;
+    font-size: 1.3rem;
+    outline: none;
+    margin: 1em;
+}
+
+button {
+    width: calc(100% - 2em);
+    margin: 0;
+    background: #8800ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.attention .me{
+	margin-top: 2em;
+	width: 3em;
+	border-radius: 50%;
+}
+
+.attention .arrow{
+	width: 15em;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 768px){
+	body{
+		font-size: 20px;
+	}
+	button{
+		width: 60% !important;
+	}
+	input{
+		width: calc(60% - 1em)  !important;
+	}
+}
+
+@media only screen and (min-width: 1024px){
+	.logo{
+		margin: 1em 0;
+	}
+	p{
+		line-height: 1.7em;
+	}
+
+	.inner{
+		display: grid;
+		grid-template-columns: 55% auto;
+	}
+
+	.inner .left{
+		text-align: left;
+		padding: 0 2em;
+		height: 100vh;
+	}
+
+	.left .content{
+		padding: 0 3em;
+	}
+
+	.left h1{
+		margin: 0;
+		font-size: 2.4em;
+	}
+
+	h1 span{
+		display: block;
+	}
+
+	.inner .right{
+		text-align: right;
+		align-self: center;
+		padding: 0 2em 1.5em;
+		justify-self: center;
+	}
+
+	.right input{
+		width: calc(100% - 1em) !important;
+		margin: 1em 0;
+	}
+
+	.right button{
+		width: 100% !important;
+	}
+
+
+	.proto-container {
+		clip-path: inset(0 45% 0 0);
+		position: absolute;
+		top: 20%;
+		height: 70%;
+		z-index: 0;
+		width: 100%;
+		pointer-events: none;
+	}
+	.proto {
+		border: 3px solid rgba(255,255,255,.1);
+		width: 19%;
+		height: 80%;
+		float: left;
+		margin-left: 1em;
+		transform: translateX(10%);
+	}
+}
